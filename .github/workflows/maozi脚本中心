@@ -1,0 +1,120 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "maozi脚本中心┃v1.0", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "maozi脚本中心"})
+
+OrionLib:MakeNotification({
+	Name = "你好！",
+	Content = "有问题请反馈",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local jichu = Window:MakeTab({
+	Name = "基础",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local daquan = Window:MakeTab({
+	Name = "脚本",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+jichu:AddSlider({
+	Name = "速度",
+	Min = 0,
+	Max = 1000,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "速度",
+	Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
+
+jichu:AddSlider({
+	Name = "跳跃力量",
+	Min = 0,
+	Max = 1000,
+	Default = 50,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "力量",
+	Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end    
+})
+
+jichu:AddButton({
+	Name = "IY指令",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+jichu:AddButton({
+	Name = "飞行gui3.0",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/CapAce2/asda/main/.github/workflows/fly%20gui3.0'))()
+  	end    
+})
+
+daquan:AddButton({
+	Name = "通用透视+通用aimbot",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/CapAce2/asda/main/.github/workflows/esp%2Baimbot-fov.lua'))()
+  	end    
+})
+
+daquan:AddButton({
+	Name = "破坏者谜团2",
+	Callback = function()
+    loadstring(game:HttpGet(("https://pastebin.com/raw/mT10xnt7"), true))()
+  	end    
+})
+
+daquan:AddButton({
+	Name = "监狱人生管理员cmd",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
+  	end    
+})
+
+daquan:AddButton({
+	Name = "疯狂电梯vip房间",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/CapAce2/asda/main/.github/workflows/fkdt'))()
+  	end    
+})
+
+daquan:AddButton({
+	Name = "在51区生存并杀死杀手",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Saktk-In-Area51/main/Area51", true))()
+  	end    
+})
+
+daquan:AddButton({
+	Name = "自然灾害模拟器",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxHackingProject/CHHub/main/CHHub.lua"))()
+  	end    
+})
+
+daquan:AddButton({
+	Name = "猪仔（piggy）获取道具",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/79-x/W/main/Piggy%20Script"))()
+  	end    
+})
+
+local guanyu = Window:MakeTab({
+	Name = "关于我",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+guanyu:AddParagraph("关于我","QQ：1065854991；邮箱：1065854991@qq.com")
+
+OrionLib:Init()
