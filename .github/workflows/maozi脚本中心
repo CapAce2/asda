@@ -82,6 +82,13 @@ daquan:AddButton({
 })
 
 daquan:AddButton({
+	Name = "监狱人生吊打一切脚本",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))
+  	end    
+})
+
+daquan:AddButton({
 	Name = "疯狂电梯vip房间",
 	Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/CapAce2/asda/main/.github/workflows/fkdt'))()
@@ -106,6 +113,34 @@ daquan:AddButton({
 	Name = "猪仔（piggy）获取道具",
 	Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/79-x/W/main/Piggy%20Script"))()
+  	end    
+})
+
+daquan:AddButton({
+	Name = "刀刃球1",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jiankeQWQ/jiankeV3/main/daorenqiu"))
+  	end    
+})
+
+daquan:AddButton({
+	Name = "刀刃球2",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/RedCircleBlock"))
+  	end    
+})
+
+daquan:AddButton({
+	Name = "造船寻宝",
+	Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/urmomjklol69/GoldFarmBabft/main/GoldFarm.lua'),true))
+  	end    
+})
+
+daquan:AddButton({
+	Name = "鲨口求生",
+	Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/YYVLbzVg", true))
   	end    
 })
 
