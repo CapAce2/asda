@@ -75,13 +75,6 @@ daquan:AddButton({
 })
 
 daquan:AddButton({
-	Name = "监狱人生吊打一切脚本",
-	Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))
-  	end    
-})
-
-daquan:AddButton({
 	Name = "疯狂电梯vip房间",
 	Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/CapAce2/asda/main/.github/workflows/fkdt'))()
