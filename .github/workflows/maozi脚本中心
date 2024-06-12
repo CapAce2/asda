@@ -109,34 +109,6 @@ daquan:AddButton({
   	end    
 })
 
-daquan:AddButton({
-	Name = "刀刃球1",
-	Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jiankeQWQ/jiankeV3/main/daorenqiu"))
-  	end    
-})
-
-daquan:AddButton({
-	Name = "刀刃球2",
-	Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/RedCircleBlock"))
-  	end    
-})
-
-daquan:AddButton({
-	Name = "造船寻宝",
-	Callback = function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/urmomjklol69/GoldFarmBabft/main/GoldFarm.lua'),true))
-  	end    
-})
-
-daquan:AddButton({
-	Name = "鲨口求生",
-	Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/YYVLbzVg", true))
-  	end    
-})
-
 local guanyu = Window:MakeTab({
 	Name = "关于我",
 	Icon = "rbxassetid://7733954058",
