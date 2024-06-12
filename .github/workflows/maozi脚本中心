@@ -109,6 +109,13 @@ daquan:AddButton({
   	end    
 })
 
+daquan:AddButton({
+	Name = "超级大力士模拟器（仅gui2可用且功能较少）",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/hngamingroblox/scripts/main/strongman%20simulator'))() 
+  	end    
+})
+
 local guanyu = Window:MakeTab({
 	Name = "关于我",
 	Icon = "rbxassetid://7733954058",
